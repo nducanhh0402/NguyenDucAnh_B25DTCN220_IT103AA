@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng Ký Thành Viên</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <table border="0" cellpadding="5">
+            
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="fullname" size="35"></td>
+            </tr>
+
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" name="birthday"></td>
+            </tr>
+
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" name="gender" value="Nam" id="m"> <label for="m">Nam</label>
+                    <input type="radio" name="gender" value="Nữ" id="f"> <label for="f">Nữ</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="tel" name="phone" size="35"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" size="35"></td>
+            </tr>
+
+            <tr>
+                <td valign="top">Địa chỉ:</td>
+                <td><textarea name="address" rows="3" cols="38"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Vai trò trong nhóm:</td>
+                <td>
+                    <select name="role">
+                        <option value="member">Thành viên</option>
+                        <option value="leader">Trưởng nhóm</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Sở thích:</td>
+                <td><input type="text" name="hobby" size="35"></td>
+            </tr>
+
+            <tr>
+                <td valign="top">Kỹ năng:</td>
+                <td><textarea name="skills" rows="3" cols="38"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Thời gian rảnh:</td>
+                <td>
+                    <input type="checkbox" name="free_time" value="morning" id="s"> <label for="s">Sáng</label>
+                    <input type="checkbox" name="free_time" value="afternoon" id="c"> <label for="c">Chiều</label>
+                    <input type="checkbox" name="free_time" value="evening" id="t"> <label for="t">Tối</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top">Lý do tham gia nhóm:</td>
+                <td><textarea name="reason" rows="3" cols="38"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Màu yêu thích:</td>
+                <td><input type="color" name="fav_color" value="#000000"></td>
+            </tr>
+
+            <tr>
+                <td>Đăng ký nhận bản tin:</td>
+                <td><input type="checkbox" name="newsletter" id="news"> <label for="news">Có</label></td>
+            </tr>
+
+            <tr>
+                <td>Nhận thông báo qua email:</td>
+                <td>
+                    <input type="radio" name="notify" value="email" id="n_email"> <label for="n_email">Email</label>
+                    <input type="radio" name

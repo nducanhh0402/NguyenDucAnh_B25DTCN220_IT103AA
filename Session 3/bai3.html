@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Thông Tin Sinh Viên</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <table border="0" cellpadding="5">
+            
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="fullname" size="30"></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" size="30"></td>
+            </tr>
+
+            <tr>
+                <td>Ngày sinh:</td>
+                <td><input type="date" name="birthday"></td>
+            </tr>
+
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" name="gender" value="Nam" id="nam"> <label for="nam">Nam</label>
+                    <input type="radio" name="gender" value="Nữ" id="nu"> <label for="nu">Nữ</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="tel" name="phone" size="30"></td>
+            </tr>
+
+            <tr>
+                <td>Chuyên ngành:</td>
+                <td><input type="text" name="major" size="30"></td>
+            </tr>
+
+            <tr>
+                <td>Năm nhập học:</td>
+                <td><input type="number" name="year" style="width: 80px;"></td>
+            </tr>
+
+            <tr>
+                <td>Điểm GPA:</td>
+                <td><input type="text" name="gpa" style="width: 80px;"></td>
+            </tr>
+
+            <tr>
+                <td valign="top">Địa chỉ:</td>
+                <td>
+                    <textarea name="address" rows="3" cols="33"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Lớp học:</td>
+                <td>
+                    <select name="class">
+                        <option value="1">Lớp 1</option>
+                        <option value="2">Lớp 2</option>
+                        <option value="3">Lớp 3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ngày đăng ký học:</td>
+                <td><input type="datetime-local" name="reg_date"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Gửi thông tin</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
