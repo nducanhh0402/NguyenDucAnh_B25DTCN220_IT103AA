@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.menu-item {
+  flex: 1 1 calc(33.333% - 40px); 
+  min-width: 250px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-item p {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+}
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+  <div class="menu-item">
+    <img src="path/to/macaroons.jpg" alt="Macaroons">
+    <p>Macaroons</p>
+  </div>
+  <div class="menu-item">
+    <img src="path/to/burger.jpg" alt="Hamburger and Fries">
+    <p>Hamburger and Fries</p>
+  </div>
+  <div class="menu-item">
+    <img src="path/to/bread.jpg" alt="Basil Leaves and Avocado on Sliced Bread">
+    <p>Basil Leaves and Avocado on Sliced Bread</p>
+  </div>
+  <div class="menu-item">
+    <img src="path/to/meat.jpg" alt="Grilled Meat">
+    <p>Grilled Meat</p>
+  </div>
+  <div class="menu-item">
+    <img src="path/to/fish.jpg" alt="Fish">
+    <p>Fish</p>
+  </div>
+  <div class="menu-item">
+    <img src="path/to/steak.jpg" alt="Steak">
+    <p>Steak</p>
+  </div>
+</div>
+    
+</body>
+</html>

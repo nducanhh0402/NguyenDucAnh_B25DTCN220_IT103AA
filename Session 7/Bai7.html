@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding: 50px;
+        }
+
+        .service-card {
+            width: 300px;
+            border: 2px solid #1eff29;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .services-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .service-box {
+            width: 250px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            text-align: center;
+            background: white;
+        }
+        .service-box h3 { color: #00bcd4; margin: 0 0 10px 0; }
+
+        .dentist-card {
+            width: 350px;
+            border: 1px solid #000;
+            background: white;
+        }
+        .dentist-header { padding: 10px; color: #ff8c00; font-weight: bold; }
+        .dentist-img { width: 100%; display: block; }
+        .dentist-info { padding: 15px; }
+        .dentist-name { font-size: 20px; font-weight: bold; margin: 0; }
+        .dentist-specialty { color: #1eff29; font-weight: bold; margin: 5px 0; }
+
+        .pricing-card {
+            width: 350px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .pricing-header { background-color: #40E0D0; padding: 20px; font-size: 20px; font-weight: bold; }
+        .hot-label {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .pricing-content { padding: 20px; text-align: left; }
+        .pricing-item { border-bottom: 1px solid #eee; padding: 10px 0; display: flex; justify-content: space-between; }
+        .highlight { color: #1eff29; font-weight: bold; }
+        .btn-booking {
+            display: inline-block;
+            margin-top: 20px;
+            background: #00d2ff;
+            color: black;
+            padding: 12px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .track-card {
+            width: 450px;
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        .status-badge {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            background: #fff3e0;
+            color: #ff9800;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        .progress-fill { width: 70%; height: 100%; background: #1eff29; }
+
+       .feedback-form {
+            width: 500px;
+            background: white;
+            border: 1px solid #000;
+            padding: 30px;
+        }
+        .feedback-form h2 {
+            color: #00695c;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #004d40;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group textarea { height: 100px; resize: none; }
+        .btn-submit {
+            width: 100%;
+            background-color: #009688;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="service-card">
+        <h2>Tẩy trắng răng</h2>
+        <p>Công nghệ hiện đại – An toàn – Hiệu quả</p>
+    </div>
+
+    <div class="services-row">
+        <div class="service-box"><h3>Niềng răng</h3><p>Điều chỉnh răng lệch lạc, mang lại hàm răng đều đẹp.</p></div>
+        <div class="service-box"><h3>Cấy ghép Implant</h3><p>Giải pháp phục hình răng mất với công nghệ hiện đại.</p></div>
+        <div class="service-box"><h3>Khám răng định kỳ</h3><p>Kiểm tra và chăm sóc răng miệng thường xuyên.</p></div>
+    </div>
+
+    <div class="dentist-card">
+        <div class="dentist-header">⭐ NHA SĨ NỔI BẬT</div>
+        <img src="https://via.placeholder.com/350x230" class="dentist-img">
+        <div class="dentist-info">
+            <p class="dentist-name">BS. Nguyễn Minh Tâm</p>
+            <p class="dentist-specialty">Nha khoa thẩm mỹ</p>
+            <p>Hơn 10 năm kinh nghiệm trong lĩnh vực nha khoa thẩm mỹ.</p>
+        </div>
+    </div>
+
+    <div class="pricing-card">
+        <div class="hot-label">HOT</div>
+        <div class="pricing-header">GÓI CHĂM SÓC RĂNG</div>
+        <div class="pricing-content">
+            <div class="pricing-item">Dịch vụ: <span class="highlight">Tẩy trắng răng</span></div>
+            <div class="pricing-item">Giá ưu đãi: <span class="highlight">1.600.000 đ</span></div>
+        </div>
+        <a href="#" class="btn-booking">ĐẶT LỊCH NGAY</a>
+    </div>
+
+    <div class="track-card">
+        <div class="status-badge">ĐANG ĐIỀU TRỊ</div>
+        <h2>Niềng răng chỉnh nha</h2>
+        <p><i class="fas fa-user-md"></i> Bác sĩ: <strong>BS. Nguyễn Minh Tâm</strong></p>
+        <p>Tiến trình điều trị</p>
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+        <p style="font-size: 12px; color: #888;">Dự kiến hoàn thành: 10/03/2026</p>
+    </div>
+
+    <form class="feedback-form">
+        <h2>Biểu Mẫu Feedback Phòng Khám Nha Khoa</h2>
+        <div class="form-group">
+            <label>Họ và tên</label>
+            <input type="text" placeholder="Nhập họ tên">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label>Dịch vụ đã sử dụng</label>
+            <select>
+                <option>Khám răng tổng quát</option>
+                <option>Tẩy trắng răng</option>
+                <option>Niềng răng</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Mức độ hài lòng</label>
+            <select>
+                <option>Rất hài lòng</option>
+                <option>Hài lòng</option>
+                <option>Chưa hài lòng</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Nội dung phản hồi</label>
+            <textarea placeholder="Hãy cho chúng tôi biết cảm nhận của bạn..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Gửi feedback</button>
+    </form>
+
+</body>
+</html>

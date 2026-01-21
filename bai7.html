@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Belle Époque - Đặt Bàn</title>
+    <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f7f2;
+    color: #333;
+}
+
+.hero-section {
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.gallery-section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-top, .grid-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 260px;
+    height: 320px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.booking-section {
+    background-color: #8B0000;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+.booking-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.booking-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.booking-form input, .booking-form select {
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: white;
+    color: #006400;
+    border: 2px solid #006400;
+    padding: 12px 40px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}</style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <h1>Đặt Bàn Tại La Belle Époque</h1>
+            <p>Trải nghiệm không gian Fine Dining sang trọng và dịch vụ hoàn hảo.</p>
+        </div>
+    </header>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="grid-top">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x400" alt="Không gian">
+                    <div class="card-content">
+                        <h3>Không Gian Chính</h3>
+                        <p>Sang trọng với ánh sáng ấm áp</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x400" alt="Bàn tiệc">
+                    <div class="card-content">
+                        <h3>Bàn Tiệc Tinh Tế</h3>
+                        <p>Bộ đồ ăn cao cấp và bố trí hoàn hảo</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x400" alt="Món ăn">
+                    <div class="card-content">
+                        <h3>Món Ăn Nghệ Thuật</h3>
+                        <p>Plating đỉnh cao từ đầu bếp</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x400" alt="Món chính">
+                    <div class="card-content">
+                        <h3>Món Chính Cao Cấp</h3>
+                        <p>Nguyên liệu tươi và sáng tạo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-bottom">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x400" alt="Lãng mạn">
+                    <div class="card-content">
+                        <h3>Bàn Ăn Lãng Mạn</h3>
+                        <p>Nến, hoa và không gian riêng tư</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x400" alt="Bếp mở">
+                    <div class="card-content">
+                        <h3>Bếp Mở Hiện Đại</h3>
+                        <p>Xem đầu bếp chế biến trực tiếp</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x400" alt="Tráng miệng">
+                    <div class="card-content">
+                        <h3>Món Tráng Miệng Tinh Tế</h3>
+                        <p>Edible flowers và plating nghệ thuật</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2>Đặt Bàn Ngay Hôm Nay</h2>
+            <p class="sub-text">Chúng tôi sẽ liên hệ xác nhận trong vòng 1 giờ.</p>
+            
+            <form class="booking-form">
+                <div class="form-grid">
+                    <input type="text" placeholder="Họ và tên" required>
+                    <input type="tel" placeholder="Số điện thoại" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="date" required>
+                    <input type="time" required>
+                    <select>
+                        <option value="">Số lượng khách</option>
+                        <option value="1">1 người</option>
+                        <option value="2">2 người</option>
+                        <option value="4">4 người</option>
+                        <option value="5+">Trên 5 người</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Gửi Yêu Cầu Đặt Bàn</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

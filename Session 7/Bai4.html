@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        /* 1. Thẻ dịch vụ lẻ (Service Card) */
+        .service-card {
+            width: 300px;
+            border: 2px solid #1eff29;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-card h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .service-card p {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
+
+        /* 2. Danh sách 3 dịch vụ nằm trên cùng một hàng */
+        .services-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service-box {
+            width: 250px;
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .service-box h3 {
+            color: #00bcd4;
+            margin-top: 0;
+        }
+
+        .service-box p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        /* 3. Nha sĩ nổi bật */
+        .dentist-card {
+            width: 350px;
+            border: 1px solid #000;
+        }
+
+        .dentist-header {
+            padding: 10px;
+            color: #ff8c00;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .dentist-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .dentist-info {
+            padding: 15px;
+        }
+
+        .dentist-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .dentist-specialty {
+            color: #1eff29;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .dentist-desc {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="service-card">
+        <h2>Tẩy trắng răng</h2>
+        <p>Công nghệ hiện đại – An toàn – Hiệu quả</p>
+    </div>
+
+    <div class="services-container">
+        <div class="service-box">
+            <h3>Niềng răng</h3>
+            <p>Điều chỉnh răng lệch lạc, mang lại hàm răng đều đẹp và nụ cười tự tin.</p>
+        </div>
+        <div class="service-box">
+            <h3>Cấy ghép Implant</h3>
+            <p>Giải pháp phục hình răng mất với công nghệ hiện đại, an toàn và bền lâu.</p>
+        </div>
+        <div class="service-box">
+            <h3>Khám răng định kỳ</h3>
+            <p>Kiểm tra và chăm sóc răng miệng thường xuyên để phòng ngừa các bệnh lý.</p>
+        </div>
+    </div>
+
+    <div class="dentist-card">
+        <div class="dentist-header">⭐ NHA SĨ NỔI BẬT</div>
+        <img src="https://via.placeholder.com/350x250" class="dentist-img" alt="Nha sĩ">
+        <div class="dentist-info">
+            <p class="dentist-name">BS. Nguyễn Minh Tâm</p>
+            <p class="dentist-specialty">Nha khoa thẩm mỹ</p>
+            <p class="dentist-desc">
+                Hơn 10 năm kinh nghiệm trong lĩnh vực nha khoa thẩm mỹ, chuyên tẩy trắng răng, dán sứ và phục hình nụ cười.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

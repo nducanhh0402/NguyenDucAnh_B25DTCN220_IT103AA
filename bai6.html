@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background-color: #f9f5f0; color: #333; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #1a1a1a;
+  color: white;
+}
+.navbar nav a { color: #ccc; text-decoration: none; margin-left: 20px; font-size: 0.9rem; }
+
+.container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+.section-title { text-align: center; margin-bottom: 30px; font-size: 1.5rem; letter-spacing: 1px; }
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  margin-bottom: 50px;
+}
+.featured-card img { width: 100%; height: 350px; object-fit: cover; }
+.card-content { padding: 30px; text-align: center; }
+.card-content h3 { margin-bottom: 15px; font-size: 1.4rem; }
+.card-content p { color: #666; margin-bottom: 20px; line-height: 1.6; }
+.read-more { color: #d4a373; text-decoration: none; font-weight: bold; }
+
+.post-list { display: flex; flex-direction: column; gap: 15px; }
+.list-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  transition: transform 0.2s;
+}
+.list-item:hover { transform: translateX(5px); }
+.list-item h4 { margin-bottom: 8px; font-size: 1.1rem; }
+.list-item p { color: #888; font-size: 0.9rem; }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #666;
+  font-size: 0.8rem;
+  margin-top: 40px;
+}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+  <div class="logo">Gourmet Insights</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Posts</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="featured-section">
+    <h2 class="section-title">Bài Viết Nổi Bật</h2>
+    <div class="featured-card">
+      <img src="plating-art.jpg" alt="Fine Dining Plating">
+      <div class="card-content">
+        <h3>Nghệ Thuật Plating Trong Fine Dining</h3>
+        <p>Khám phá cách các đầu bếp hàng đầu biến món ăn thành tác phẩm nghệ thuật...</p>
+        <a href="#" class="read-more">Đọc thêm →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="list-section">
+    <h2 class="section-title">Các Bài Viết Khác</h2>
+    <div class="post-list">
+      <div class="list-item">
+        <h4>Bí Quyết Chọn Nguyên Liệu Cao Cấp</h4>
+        <p>Từ Wagyu Nhật Bản đến hải sản tươi sống...</p>
+      </div>
+      <div class="list-item">
+        <h4>Xu Hướng Ẩm Thực 2025</h4>
+        <p>Những phong cách plating mới và nguyên liệu đang lên ngôi...</p>
+      </div>
+      <div class="list-item">
+        <h4>Hành Trình Của Một Đầu Bếp Michelin</h4>
+        <p>Chia sẻ từ đầu bếp từng đạt sao Michelin về đam mê và thử thách...</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 Gourmet Insights. All rights reserved.
+</footer>
+</body>
+</html>
